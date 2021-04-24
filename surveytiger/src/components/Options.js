@@ -6,7 +6,7 @@ const Options =({qType,uid,addOptions,deleteOptions,updateOptionstext})=>{
             <input type="text" className="form-control" placeholder="Options Text" onChange={event=>{updateOptionstext(uid,event.target.value) }}/>
             <div className="input-group-append">
             <button className="btn btn-outline-secondry" type="button" onClick={()=>{
-                if(qType==1)
+                if(qType===1)
                   addOptions();
 
             }}>+</button>
